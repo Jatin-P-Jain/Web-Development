@@ -1,0 +1,145 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="vendors2/css2/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors2/css2/Grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors2/css2/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors2/css2/animate.css">
+	<link href="resources2/css2/about1111.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+	<title>Vastra</title>
+</head>
+ <body>   
+
+<header>
+	<div class="topbar">
+	<div class="topnav">
+	  <a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="ion-home iconback"></i>Home</a>
+	  <a href="index2.html">Category  (Men/Women)</a>
+	  <a href="menS.php" >Shirts</a>
+	  <a href="menT.php">T-Shirts</a>
+	  <a href="menJ.php">Jeans</a>
+	  <a href="buyerabout.html" class="current">About Us</a>
+	 </div>
+					
+		</div>
+</header>
+	 		<div class="about">
+	 		<h1> Vastra is a renowned Online Store, Launched in 2018,August 2.</h1>
+	 		<h2> Our founders believe that the internet can break economic barriers and change the way business is done. 		 Therefore, we want to bring e-commerce into the people's lives. </h2> 
+	 		<h3> Clothing Brand related products can be purchased here with reasonable price! </h3>
+				<span class="helpline"><h3><i class="ion-ios-telephone"></i>&nbsp;&nbsp;HELPLINE: 1800-1800-123</h3></span>
+	 		<h1> Register Now to stay connected with us for Weekly Offers and Discounts! </h1>
+	 		</div>
+
+ 			<div id="id01" class="modal">
+					  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close"><i class="ion-close-round"></i></span>
+					  <form  method="post" class="modal-content" action="signup.php">
+						<div class="container">
+						  <h2>Sign Up</h2>
+						  <p>Please fill in this form to create an account.</p>
+							<div class="signup-form">
+							<div class="row">
+								<div class="col span-1-of-3">
+									  <label>Name</label>
+								</div>
+								<div class="col span-2-of-3">
+									  <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+								</div>
+							</div>    
+
+							<div class="row">
+								<div class="col span-1-of-3">
+									  <label>Email</label>
+								</div>
+								<div class="col span-2-of-3">
+									  <input type="email" name="uname" id="uname" placeholder="Enter Your Email" required>
+								</div>
+							</div>    
+							<div class="row">
+								<div class="col span-1-of-3">
+									  <label>Password</label>
+								</div>
+								<div class="col span-2-of-3">
+									  <input type="password" name="pass" id="pass" placeholder="Enter Your Password" required>
+								</div>
+							</div>    
+						  <div class="row">
+								<div class="col span-1-of-3">
+									  <label>Repeat Password</label>
+								</div>
+								<div class="col span-2-of-3">
+									  <input type="password" name="rpass" id="rpass" placeholder="Enter Your Password Again!" required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col span-1-of-3">
+									  <label>Mobile Number</label>
+								</div>
+								<div class="col span-2-of-3">
+									  <input type="number" name="phnum" id="phnum" placeholder="Enter Your PhoneNumber" required>
+								</div>
+							</div>   
+								<div class="row">
+								<div class="col span-1-of-3">
+									  <label>Gender</label>
+								</div>
+								<div class="col span-2-of-3">
+									<div class="col span-1-of-2">
+									  <input type="radio" name="gender" id="gender" value="Male"required>Male
+									</div>
+									  <input type="radio" name="gender" id="gender" value="Female"required>Female
+								</div>
+							</div>   
+
+							</div>	
+							<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+						  <div class="row">
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+							<button type="submit" class="signup">Sign Up</button>
+						  </div>
+						</div>
+					  </form>
+				<label id="error"></label>
+					</div>
+
+
+					<div id="id02" class="modal">
+						  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close"><i class="ion-close-round"></i></span>
+							<form method="post" class="modal-content animate" action="login.php">
+								  <div class="container">
+									<h2>Login</h2>
+									<div class="imgcontainer">
+									  <img src="resources2/img2/avatar-default-icon.png" alt="Avatar" class="avatar">
+									</div>
+									<div class="container-form">
+										<div class="row">
+											<div class="col span-1-of-3">
+										  		<label><b>Username</b></label>
+											</div>
+											<div class="col span-2-of-3">
+										  		<input type="text" placeholder="Enter Username" name="uname" required>
+											</div>
+											<div class="row">
+												<div class="col span-1-of-3">
+										  <label for="psw"><b>Password</b></label>
+												</div>
+												<div class="col span-2-of-3">
+										  <input type="password" placeholder="Enter Password" name="psw" required>
+												</div>
+											</div>
+											<label>
+											<input type="checkbox" checked="checked" name="remember"> Remember me
+										  </label>
+											<a class="psw" href="#">Forgot password?</a>
+										  <button type="submit" name="submit" href="index2.html">Login</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						
+						</div>
+
+</body>
+	
+</html>

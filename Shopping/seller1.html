@@ -1,0 +1,142 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="vendors2/css2/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors2/css2/Grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors2/css2/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors2/css2/animate.css">
+	<link href="resources2/css2/seller1111111111.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+	<title>Vastra</title>
+</head>
+<body>
+<header>
+	<div class="topbar">
+	<div class="topnav">
+	  <a href="index.html"><i class="ion-home iconback"></i>Home</a>
+	  <a href="seller1.html" onclick="alert('First Login Or SignUp')">Add</a>
+	  <a href="seller1.html" onclick="alert('First Login Or SignUp')">Update</a>
+	  <a href="seller1.html" onclick="alert('First Login Or SignUp')">Delete</a>
+	  <a href="about1.html">About Us</a>
+	  
+		</div>
+	  <a class="btn subtn" onclick="document.getElementById('id01').style.display='block'" href="#" title="New Seller">Sign Up</a>
+	  <a class="btn loginbtn" onclick="document.getElementById('id02').style.display='block'" href="#" title="Your Account">LogIn</a>
+  	
+		</div>
+</header>
+			<div id="id01" class="modal">
+					  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close"><i class="ion-close-round"></i></span>
+					  <form  method="post" class="modal-content" action="sell-signup.php">
+						<div class="container">
+						  <h2>Sign Up</h2>
+						  <p>Please fill in this form to create an account.</p>
+							<div class="signup-form">
+							<div class="row">
+								<div class="col span-1-of-3">
+									  <label>Name</label>
+								</div>
+								<div class="col span-2-of-3">
+									  <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+								</div>
+							</div>    
+
+							<div class="row">
+								<div class="col span-1-of-3">
+									  <label>Email</label>
+								</div>
+								<div class="col span-2-of-3">
+									  <input type="email" name="uname" id="uname" placeholder="Enter Your Email" required>
+								</div>
+							</div>    
+							<div class="row">
+								<div class="col span-1-of-3">
+									  <label>Password</label>
+								</div>
+								<div class="col span-2-of-3">
+									  <input type="password" name="pass" id="pass" placeholder="Your Password" required>
+								</div>
+							</div>    
+						  <div class="row">
+								<div class="col span-1-of-3">
+									  <label>Repeat Password</label>
+								</div>
+								<div class="col span-2-of-3">
+									  <input type="password" name="cpass" id="cpass" placeholder="Confirm Your Password" required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col span-1-of-3">
+									  <label>Mobile Number</label>
+								</div>
+								<div class="col span-2-of-3">
+									  <input type="number" name="pnum" id="phnum" placeholder="Enter Your PhoneNumber" required>
+								</div>
+							</div> 
+							<div class="row">
+								<div class="col span-1-of-3">
+									  <label>City</label>
+								</div>
+								<div class="col span-2-of-3">
+							<select name="city" id="find-us" required>
+                                <option value="Bengaluru">Bengaluru</option> 
+                                <option value="Mumbai">Mumbai</option> 
+                                <option value="Delhi">Delhi</option> 
+                                <option value="Chennai">Chennai</option> 
+                            </select>
+							</div>   
+
+							</div>	
+							<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+						  
+						</div>
+							<div class="row">
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+							<button type="submit" class="signup">Sign Up</button>
+						  </div>
+						  </div>
+					</form>
+				</div>
+
+
+					<div id="id02" class="modal">
+						  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close"><i class="ion-close-round"></i></span>
+							<form method="post" class="modal-content animate" action="sell-login.php">
+								  <div class="container">
+									<h2>Login</h2>
+									<div class="imgcontainer">
+									  <img src="resources2/img2/avatar-default-icon.jpg" alt="Avatar" class="avatar">
+									</div>
+									<div class="container-form">
+										<div class="row">
+											<div class="col span-1-of-3">
+										  		<label><b>Username</b></label>
+											</div>
+											<div class="col span-2-of-3">
+										  		<input type="text" placeholder="Enter Username" name="uname" required>
+											</div>
+											<div class="row">
+												<div class="col span-1-of-3">
+										  <label for="psw"><b>Password</b></label>
+												</div>
+												<div class="col span-2-of-3">
+										  <input type="password" placeholder="Enter Password" name="pass" required>
+												</div>
+											</div>
+											<label>
+											<input type="checkbox" checked="checked" name="remember"> Remember me
+										  </label>
+											<a class="psw" href="#">Forgot password?</a>
+										  <button type="submit" name="submit">Login</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						
+						</div>
+				<div class="hero-text">
+					<h1>Hello Seller!</h1>
+					<h2>Vastra Gives You a Platform To Sell Your Products.</h2>
+				</div>
+</body>
+</html>

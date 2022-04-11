@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Vastra</title>
+    </head>
+	<body>
+		<?php
+  $link = mysql_connect("localhost", "root", "");
+  mysql_select_db("shopping");
+  $sql = "SELECT img FROM products WHERE type='shirt'";
+  $result = mysql_query("$sql");
+  mysql_close($link);
+
+	?>
+<img src="" width="175" height="200" />
+		</body>
+</html>
